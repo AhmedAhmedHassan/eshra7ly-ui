@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" href="include/rs-plugin/css/settings.css" media="screen">
+	<link rel="stylesheet" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" href="include/rs-plugin/css/navigation.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+			.block-form-2 .form-control {
+				--cnvs-input-btn-padding-y: 15px;
+				--cnvs-input-btn-padding-x: 2px;
+				--cnvs-input-btn-font-weight: 500;
+				--cnvs-input-btn-font-size: 18px;
+				--cnvs-input-btn-border-color: #DDD;
+			}
+
+			.block-form-2 .form-control::-moz-placeholder {
+				color: #DDD;
+				font-weight: 400;
+				font-size: 15px;
+			}
+			.block-form-2 .form-control:-ms-input-placeholder {
+				color: #DDD;
+				font-weight: 400;
+				font-size: 15px;
+			}
+			.block-form-2 .form-control::-webkit-input-placeholder {
+				color: #DDD;
+				font-weight: 400;
+				font-size: 15px;
+			}
+
+			.block-form-2 label:not(.custom-control-label):not(.error) {
+				text-transform: none;
+				letter-spacing: 0;
+				font-weight: 500;
+				color: #777;
+				margin-bottom: 8px;
+				font-size: 14px;
+			}
+
+			.nav-pills .nav-link, .section-title {
+				padding: 10px 17px;
+				color: #FFF;
+				background-color: #1f6984;;
+				border: 1px solid transparent;
+			}
+
+			.block-form-2 .nav-pills .nav-link.active,
+			.block-form-2 .nav-pills .show > .nav-link,
+			.block-form-2 .nav-pills .nav-link:not(.active) {
+				background-color: #F68740;
+				border-color: #F68740;
+			}
+
+			.block-form-2 .nav-pills .nav-link:not(.active) {
+				opacity: .7;
+			}
+
+			.block-form-2 .nav-pills .nav-link.active ~ .nav-link {
+				opacity: 1;
+				color: var(--cnvs-constrast-600);
+				background-color: var(--cnvs-constrast-100);
+				pointer-events: none;
+			}
+
+			.block-form-2 .flatpickr-input.form-control[readonly] {
+				background-color: inherit;
+			}
+
+			label.error {
+				display: block !important;
+				color: #762626;
+				font-size: 12px !important;
+				font-weight: 400 !important;
+				opacity: 0.9;
+				font-style: italic;
+				letter-spacing: 0;
+				text-transform: none;
+			}
+
+			.svg-bg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 0;
+			}
+
+
+			@media (max-width: 767.98px) {
+			.section-title {
+				font-size: .8rem;
+			}
+
+			.preview-title {
+				font-size: 1.3rem;
+			}
+			.next-btn{
+				padding:4px;
+			}
+		}
+	</style>
+	<!-- Document Title
+	============================================= -->
+	<title>Revolution Slider - Kenburns Effect | Canvas</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" srcset="site/new-logo.png, site/new-logo.png" src="site/new-logo.png" alt="eshra7ly logo">
+								<img class="logo-dark" srcset="site/new-logo.png, site/new-logo.png" src="site/new-logo.png" alt="eshra7ly logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc">
+
+							<!-- Login
+							============================================= -->
+							<a title="login" href="login.html" class="button button-mini button-circle button-3d button-primary button-icon-effect button-icon-flip-y">
+								<i class="fa-solid fa-right-to-bracket me-1"></i>
+							</a>
+							<!-- #Login end -->
+
+							<!-- Register
+							============================================= -->
+							<a title="register" href="register.html" class="button button-mini button-circle button-3d button-secondary button-icon-effect button-icon-flip-y">
+								<i class="fa-solid fa-user-plus me-1"></i>
+								
+							</a>
+							<!-- #Register end -->
+
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+							<ul class="menu-container">
+								<li class="menu-item current">
+									<a class="menu-link transform-skew" href="index.html"><div>Home</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="#"><div>About us</div></a>
+									<ul class="sub-menu-container">
+										<li class="menu-item">
+											<a class="menu-link" href="about-us.html"><div>about us</div></a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="message.html"><div>eshra7ly message</div></a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="mission.html"><div>our mission</div></a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="courses.html"><div>Courses</div></a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="contact-us.html"><div>Contact us</div></a>
+								</li>
+							</ul>
+
+						</nav>
+						<!-- #primary-menu end -->
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section class="page-title page-title-parallax parallax scroll-detect page-title-center dark include-header include-topbar" style="padding-bottom: 140px;">
+			<img src="site/sections/page-title.jpg" class="parallax-bg">
+			<div id="particles-line"></div>
+
+			<div class="container position-relative pt-lg-6">
+				<div class="page-title-row">
+
+					<div class="page-title-content">
+						<div class="badge rounded-pill border border-light text-light mb-4">Sign up</div>
+						<h1 class="bounce animated">Create Account</h1>
+					</div>
+
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Register</li>
+						</ol>
+					</nav>
+
+				</div>
+			</div>
+			<div class="video-overlay z-1" style="background-image: linear-gradient(to top, rgba(254,150,3,0.5), #39384D);"></div>
+		</section><!-- .page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content" class="block-form-2">
+			<div class="content-wrap py-0 overflow-visible">
+				<div class="card mx-auto mw-lg border-0 shadow rounded-4 card-seo-about mb-5 mb-lg-0">
+					<div class="card-body p-lg-5">
+						
+						<form id="register-form" class="mb-0" action="#" method="post" >
+							<div class="form-process"></div>
+
+							<div id="tab-register" class="nav nav-pills flex-column flex-lg-row" role="tablist">
+								<a class="nav-link active ms-0" data-bs-toggle="list" href="#tab-personal-info" role="tab">1. Personal Information</a>
+								<a class="nav-link ms-0 mt-2 mt-lg-0 ms-lg-3" data-bs-toggle="list" href="#tab-contact-info" role="tab">2. Contact Information</a>
+								<a class="nav-link ms-0 mt-2 mt-lg-0 ms-lg-3" data-bs-toggle="list" href="#tab-education-system" role="tab">3. Education System</a>
+								<a class="nav-link ms-0 mt-2 mt-lg-0 ms-lg-3" data-bs-toggle="list" href="#tab-security" role="tab">4. Security</a>
+								<a class="nav-link ms-0 mt-2 mt-lg-0 ms-lg-3" data-bs-toggle="list" href="#tab-preview" role="tab">5. Preview & Register</a>
+							</div>
+
+							<div class="line line-sm"></div>
+							<div class="tab-content mt-5" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="tab-personal-info">
+									<span class="op-05 text-smaller ls-1">STEP - 1/5</span>
+									<h2 class="mb-5 text-uppercase ls-1 fw-bold section-title">Personal Information</h2>
+									<div class="row">
+										<div class="col-md-4 mb-5">
+											<label for="step-student-name">First Name:</label>
+											<input  type="text" name="first_name" id="step-first-name" class=" @error('first_name') error @enderror form-control border-form-control required" value="">
+											<!-- @error('applicant_name')
+												<label for="step-student-name" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+										<div class="col-md-4 mb-5">
+											<label for="step-current-school-name">Middle name:</label>
+											<input  type="text" name="middle_name" id="step-middle-name" class=" @error('middle_name') error @enderror form-control border-form-control required" value="">
+											<!-- @error('applicant_current_school')
+												<label for="step-current-school-name" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+										<div class="col-md-4 mb-5">
+											<label for="step-current-school-name">last name:</label>
+											<input  type="text" name="last_name" id="step-last-name" class=" @error('last_name') error @enderror form-control border-form-control required" value="" >
+											<!-- @error('applicant_current_school')
+												<label for="step-current-school-name" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+										<div class="col-md-4 mb-4">
+											<label for="step-nationality">Nationality:</label>
+											<select name="nationality" id="step-nationality" class="form-select form-control border-form-control ">
+												<option value="0">Egypt</option>
+												<option value="10">Germany</option>
+												<option value="11">Algeria</option>
+												<option value="12">Palestine</option>
+											</select>  
+										</div>
+										<div class="col-md-4 mb-4">
+											<label for="step-gender">Gender:</label><br><br>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input required valid" checked type="radio" name="gender" id="gender-male" value="Male">
+												<label class="form-check-label text-transform-none" for="gender-male">Male</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input valid" type="radio" name="gender" id="gender-female" value="Female">
+												<label class="form-check-label text-transform-none" for="gender-female">Female</label>
+											</div>
+										</div>
+										
+										<div class="col-md-4 mb-4">
+											<label for="step-date-of-birth">Student’s Date of Birth:</label>
+											<!-- <input type="date" min="{{ date('Y-m-d', strtotime('-17 years')) }}" max="{{ date('Y-m-d', strtotime('-9 years')) }}" value="" class="@error('date_of_birth') error @enderror form-control border-form-control required text-start" id="step-date-of-birth" name="date_of_birth" placeholder="DD/MM/YYYY"> -->
+											<input type="date" value="" class="@error('date_of_birth') error @enderror form-control border-form-control required text-start" id="step-date-of-birth" name="date_of_birth" placeholder="DD/MM/YYYY">
+											<!-- @error('applicant_date_of_birth')
+												<label for="step-date-of-birth" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+									
+										<div class="w-100 clear"></div>
+										<div class="col-12 text-end">
+											<a href="#" class="tab-action-btn-next next-btn button-secondary text-end button button-rounded button-reveal button-large button-border  tada animated">
+												<i class="bi-arrow-right"></i>
+												<span>Next step</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab-contact-info">
+									<span class="op-05 text-smaller ls-1">STEP - 2/5</span>
+									<h2 class="mb-5 text-uppercase ls-1 fw-bold section-title">Contact Information</h2>
+									<div class="row mb-4">
+										<label for="step-whatsapp-number">Whatsapp Number:</label>
+										<div class="col-2">
+											<select name="phoneCountryCode" id="step-phoneCountryCode" class="form-select form-control border-form-control ">
+												<option value="0">Egypt (+02)</option>
+												<option value="10">Germany</option>
+												<option value="11">Algeria</option>
+												<option value="12">Palestine</option>
+											</select>  
+										</div>
+										<div class="col-10">
+											<input type="number" name="phone"  class="@error('phone') error @enderror form-control border-form-control required" value="" placeholder="+20111XXXX">
+											<!-- @error('phone')
+												<label for="step-phone" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+									</div>
+									<div class="row mb-4">
+										<label for="step-parent-whatsapp-number">Parent Whatsapp Number:</label>
+										<div class="col-2">
+											<select name="parentPhoneCountryCode" id="step-parentPhoneCountryCode" class="form-select form-control border-form-control ">
+												<option value="0">Egypt (+02)</option>
+												<option value="10">Germany</option>
+												<option value="11">Algeria</option>
+												<option value="12">Palestine</option>
+											</select>  
+										</div>
+										<div class="col-10">
+											<input type="number" name="parent_phone"  class="@error('parent_phone') error @enderror form-control border-form-control required" value="" placeholder="+20111XXXX">
+											<!-- @error('phone')
+												<label for="step-phone" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+									</div>
+									<div class="row mb-4">
+										<label for="step-parent-whatsapp-number">Country:</label>
+										<div class="col-12">
+											<select name="country" id="step-country" class="form-select form-control border-form-control ">
+												<option value="0">Egypt</option>
+												<option value="10">Germany</option>
+												<option value="11">Algeria</option>
+												<option value="12">Palestine</option>
+											</select>  
+										</div>
+									</div>
+									<div class="w-100 clear"></div>
+                                                    
+									<div class="col-md-12 mt-2 text-end">
+										<a href="#" id="next_to_preview_step_btn" class="tab-action-btn-next next-btn button-secondary text-end button button-rounded button-reveal button-large button-border  tada animated">
+											<i class="bi-arrow-right"></i>
+											<span>Next step</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab-education-system">
+									<span class="op-05 text-smaller ls-1">STEP - 3/5</span>
+									<h2 class="mb-5 text-uppercase ls-1 fw-bold section-title">Education System</h2>
+									<div class="row mb-4">
+										<label for="step-education-system">Education System:</label>
+										<div class="col-12">
+											<select name="education_system" id="step-education-system" class="form-select form-control border-form-control ">
+												<option value="0">IGCSE</option>
+												<option value="10">Eshra7ly KS1 Scholarship</option>
+												<option value="11">Specil courses</option>
+												<option value="12">American</option>
+												<option value="12">Language courses</option>
+											</select>  
+										</div>
+									</div>
+									<div class="w-100 clear"></div>
+                                                    
+									<div class="col-md-12 mt-2 text-end">
+										<a href="#" id="next_to_preview_step_btn" class="tab-action-btn-next next-btn button-secondary text-end button button-rounded button-reveal button-large button-border  tada animated">
+											<i class="bi-arrow-right"></i>
+											<span>Next step</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab-security">
+									<span class="op-05 text-smaller ls-1">STEP - 4/5</span>
+									<h2 class="mb-5 text-uppercase ls-1 fw-bold section-title">Security</h2>
+									<div class="row">
+										<div class="col-12 mb-5">
+											<label for="step-email">Email:</label>
+											<input  type="email" name="email" id="step-email" class=" @error('email') error @enderror form-control border-form-control required" value="">
+											<!-- @error('applicant_name')
+												<label for="step-student-name" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+										<div class="col-md-6 mb-5">
+											<label for="step-password">Password:</label>
+											<input  type="password" name="password" id="step-password" class=" @error('password') error @enderror form-control border-form-control required" value="">
+											<!-- @error('applicant_current_school')
+												<label for="step-password" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+										<div class="col-md-6 mb-5">
+											<label for="step-password-confirmation">Confirm password:</label>
+											<input  type="password" name="password_confirmation" id="step-password-confirmation" class=" @error('password_confirmation') error @enderror form-control border-form-control required" value="" >
+											<!-- @error('applicant_current_school')
+												<label for="step-password-confirmation" class="error">{{ $message }}</label>
+											@enderror -->
+										</div>
+									
+										<div class="w-100 clear"></div>
+										<div class="col-12 text-end">
+											<a href="#" class="tab-action-btn-next next-btn button-secondary text-end button button-rounded button-reveal button-large button-border  tada animated" >
+												<i class="bi-arrow-right"></i>
+												<span>Next step</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="tab-preview">
+									<span class="op-05 text-smaller ls-1">STEP - 5/5</span>
+									<h2 class="mb-5 text-uppercase ls-1 fw-bold section-title">Preview & Register</h2>
+									<div class="row">
+										<div class="col-md-5">
+											<h2 class="mb-5 text-uppercase text-center ls-1 fw-bold border-bottom preview-title" style="color:#F68740">Personal Information</h2>
+											<div class="row">
+												<div class="col-12">
+													<label for="">First Name:</label>
+													<p class="border-bottom pb-3" id="student_first_name"></p>
+												</div>
+												<div class="col-12">
+													<label for="">Middle Name:</label>
+													<p class="border-bottom pb-3" id="student_middle_name"></p>
+												</div>
+												<div class="col-12">
+													<label for="">Last Name:</label>
+													<p class="border-bottom pb-3" id="student_last_name"></p>
+												</div>
+												<div class="col-12">
+													<label for="">Nationality:</label>
+													<p class="border-bottom pb-3" id="student_nationality"></p>
+												</div>
+												<div class="col-12">
+													<label for="">Gender:</label>
+													<p class="border-bottom pb-3" id="student_gender"></p>
+												</div>
+												<div class="col-12">
+													<label for="step-date-of-birth">Date Of Birth:</label>
+													<p class="border-bottom pb-3" id="student_date_of_birth"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-1" style="border-left: 1px solid #F68740;margin:0 auto;width: 0;"></div>
+										<div class="col-md-5">
+											<h2 class="mb-5 text-uppercase text-center ls-1 fw-bold border-bottom preview-title" style="color:#F68740">Contact Information</h2>
+											<div class="row">
+												<div class="col-12">
+													<label for="step-father-name">Student WhatsApp Number:</label>
+													<p class="border-bottom pb-3" id="student_whatsapp_number"></p>
+												</div>
+												<div class="col-12">
+													<label for="step-father-occupation">Parent WhatsApp Number:</label>
+													<p class="border-bottom pb-3" id="parent_whatsapp_number"></p>
+												</div>
+												<div class="col-12">
+													<label for="step-father-email">Country:</label>
+													<p class="border-bottom pb-3" id="student_country"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="" style="border-top: 1px solid #F68740;margin:30px auto;"></div>
+									<div class="row">
+										<div class="col-md-5">
+											<h2 class="mb-5 text-uppercase text-center ls-1 fw-bold border-bottom preview-title" style="color:#F68740">Education System</h2>
+											<div class="row">
+												<div class="col-12">
+													<label for="step-father-name">Education System:</label>
+													<p class="border-bottom pb-3" id="student_education_system"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-1" style="border-left: 1px solid #F68740;margin:0 auto;width: 0;"></div>
+										<div class="col-md-5">
+											<h2 class="mb-5 text-uppercase text-center ls-1 fw-bold border-bottom preview-title" style="color:#F68740">Security</h2>
+											<div class="row">
+												<div class="col-12">
+													<label for="step-father-name">Email:</label>
+													<p class="border-bottom pb-3" id="student_email"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 py-4">
+											<div class="css3-spinner d-none " style="">
+												<div class="css3-spinner-ball-pulse-sync">
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+											</div>
+											<button type="submit" class="text-end mx-auto d-block  w-90 button button-rounded button-reveal button-large button-border tada animated">
+												<i class="bi-arrow-right"></i>
+												<span>Apply Now</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="empty-field-error-message" data-notify-position="top-right" data-notify-type="error" data-notify-msg='<i class="fa-solid fa-circle-exclamation pe-2"></i> Please fill in all required fields'></div>		
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="border-0 bg-white">
+			<div class="container">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-5 pt-0">
+
+					<div class="row col-mb-50">
+						<div class="col-md-8">
+
+							<div class="widget">
+
+								<img src="site/new-logo.png" width="100" alt="Footer Logo" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
+
+								<p>We believe in <strong class="text-primary">Simple</strong>, <strong class="text-primary">Creative</strong> &amp; <strong class="text-primary">Flexible</strong> Education Standards. Browse the amazing Courses this platform offers. <strong class="text-primary">Eshra7ly</strong>, the education you deserve</p>
+
+								<div class="line line-sm"></div>
+
+								<div class="row g-4">
+									<div class="col-6 widget_links">
+										<div >
+											<address>
+												<strong>Headquarters:</strong><br>
+												IFZA Business Park, DDP, 29605 - 001,<br>
+												Dubai, United Arab Emirates<br>
+											</address>
+											<abbr title="Email Address"><strong>Email:</strong></abbr> admin@eshra7ly.net
+											<abbr title="Email Address"><strong>Email:</strong></abbr> ceo@eshra7ly.net
+										</div>
+									</div>
+
+									<div class="col-6">
+										<div class="py-1">
+											<div class="counter counter-small" style="color: #F68740;"><span data-from="50" data-to="15000" data-refresh-interval="80" data-speed="3000" data-comma="true">15,000</span></div>
+											<h5 class="mb-0">Total Students</h5>
+										</div>
+										<div class="py-1">
+											<div class="counter counter-small" style="color: #1F6984;"><span data-from="50" data-to="800" data-refresh-interval="80" data-speed="3000" data-comma="true">800</span></div>
+											<h5 class="mb-0">Total Courses</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="widget">
+
+								<div class="row">
+									<div class="col-12">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="bi-telephone text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Phone (EG):</span><br>
+												<h3 class="text-transform-none ls-0 fw-semibold">+20 111 000 1677</h3>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12 mt-4">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="bi-telephone text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Phone (UAE):</span><br>
+												<h3 class="text-transform-none ls-0 fw-semibold">+971 542 377 820</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="widget">
+
+								<div class="row col-mb-30">
+									<div class="col-lg-6 col-md-12 col-6">
+										<div class="d-flex align-items-center">
+											<a href="https://www.facebook.com/Eshra7ly.online" target="_blank" class="social-icon bg-secondary text-white  h-bg-facebook mb-0 me-2">
+												<i class="fa-brands fa-facebook-f"></i>
+												<i class="fa-brands fa-facebook-f"></i>
+											</a>
+											<a href="https://www.facebook.com/Eshra7ly.online" target="_blank" class="text-dark"><small><strong class="d-block">Like us</strong>on Facebook</small></a>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-6">
+										<div class="d-flex align-items-center">
+											<a href="https://www.instagram.com/eshra7ly.net1/" target="_blank" class="social-icon bg-primary text-white h-bg-instagram mb-0 me-2">
+												<i class="bi-instagram"></i>
+												<i class="bi-instagram"></i>
+											</a>
+											<a href="https://www.instagram.com/eshra7ly.net1/" target="_blank" class="text-dark"><small><strong class="d-block">Follow us</strong>on Instagram</small></a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="background: url('site/sections/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
+				<div class="container">
+
+					<div class="row justify-content-between col-mb-30">
+						<div class="col-12 col-lg-auto text-center text-lg-start">
+							Copyrights &copy; 2024 All Rights Reserved by eshra7ly.<br>
+							<div class="copyright-links"><a href="#" class="text-contrast-600">Terms of Use</a> / <a href="#" class="text-contrast-600">Privacy Policy</a></div>
+						</div>
+
+						<div class="col-12 col-lg-auto text-center text-lg-end">
+							<div class="copyrights-menu copyright-links">
+								<a href="index.html" class="text-contrast-600">Home</a>/
+								<a href="about-us.html" class="text-contrast-600">About Us</a>/
+								<a href="faqs.html" class="text-contrast-600">FAQs</a>/
+								<a href="contact-us.html" class="text-contrast-600">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<!-- Main Particles Js
+	============================================= -->
+	<script src="js/particles/particles.min.js"></script>
+	<script src="js/particles/particles-line.js"></script><!-- Particles Line -->
+
+	<script>
+		jQuery(document).ready( function(){
+			// check empty fields
+			function containsNoString(fields) {
+				var containsString = false;
+				var count=0
+				fields.each(function() {
+					if ($(this).val().trim() == '') {
+						count++
+					}
+				});
+				return count;
+			}
+			jQuery('.tab-action-btn-next').click(function(e) {
+				let elementTab = jQuery(this).parents('.tab-pane');
+	
+				jQuery('#register-form').valid();
+				let errors = elementTab.find('.required.error').length;
+				let emptyFields=containsNoString(elementTab.find('.required'));
+	
+				if( errors > 0 ) {
+					jQuery('#tab-register > .active').nextAll('a').addClass('disabled');
+					return false;
+				}else if(emptyFields > 0){
+				   SEMICOLON.Modules.notifications(document.querySelector('#empty-field-error-message'));
+				}else {
+					jQuery('#tab-register > .active').next('a').removeClass('disabled').trigger('click');
+					let nextTabEl = jQuery('#tab-register > .active').next('a').removeClass('disabled'),
+					tab = new bootstrap.Tab( nextTabEl.get(0) );
+					tab.show();
+					e.preventDefault();
+					return false;
+				}
+			});
+	
+			jQuery('#register-form').on( 'formSubmitSuccess', function(){
+				jQuery(".tab-content .tab-pane:eq(4)").removeClass('active show');
+				jQuery(".tab-content .tab-pane:eq(0)").addClass('active show');
+				jQuery("#tab-register .nav-link:eq(4)").removeClass('active');
+				jQuery("#tab-register .nav-link:eq(0)").addClass('active');
+			});
+		});
+	</script>
+	
+	<script>
+		// on click next btn that show the preview step
+		$('#next_to_preview_step_btn').on('click',function(){
+			$('#student_name').html($('#step-student-name').val());
+			$('#student_school').html($('#step-current-school-name').val());
+			$('#student_date_of_birth').html($('#step-date-of-birth').val());
+			$('#student_grade').html($('#step-grade').val());
+			$('#student_email').html($('#step-email').val());
+			$('#student_phone').html($('#step-phone').val());
+			$('#student_address').html($('#step-address').val());
+	
+			$('#father_name').html($('#step-father-name').val());
+			$('#father_occupation').html($('#step-father-occupation').val());
+			$('#father_email').html($('#step-father-email').val());
+			$('#father_phone').html($('#step-father-phone').val());
+	
+			$('#mother_name').html($('#step-mother-name').val());
+			$('#mother_occupation').html($('#step-mother-occupation').val());
+			$('#mother_email').html($('#step-mother-email').val());
+			$('#mother_phone').html($('#step-mother-phone').val());
+	
+		})
+	</script>
+</body>
+</html>

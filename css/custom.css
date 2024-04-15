@@ -1,0 +1,249 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+:root {
+	--cnvs-btn-skew: 15deg;
+	--cnvs-transitions: 0.5s ease;
+	--cnvs-header-height:70px;
+	--cnvs-header-height-shrink: 60px;
+}
+
+/* Start: Navbar 
+=====================================*/
+.is-expanded-menu .full-header #logo{
+	border:0;
+}
+
+.is-expanded-menu .full-header .primary-menu .menu-container {
+	border:0;
+}
+
+#header-wrap #logo img {
+	height: 50px;
+}
+
+.transform-skew {
+    transform: skew(calc(-1* var(--cnvs-btn-skew)));
+}
+
+.menu-container > .menu-item.current > .menu-link {
+    --cnvs-primary-menu-active-color: var(--bs-white);
+    background-color: var(--cnvs-themecolor);
+	--cnvs-primary-menu-padding-y: 11px;
+}
+
+@media (max-width:768px) {
+	#header-wrap #logo img {
+		height: 50px;
+	}
+
+	.menu-container {
+		margin-top: 20px;
+	}
+}
+
+/* End: Navbar 
+======================================*/
+
+.primary-skew {
+    transform: skew(calc(-1* var(--cnvs-btn-skew)));
+	background-color: var(--cnvs-themecolor);
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+	padding:8px;
+}
+
+.secondary-skew {
+    transform: skew(calc(-1* var(--cnvs-btn-skew)));
+	background-color: var(--bs-secondary);
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+	padding:8px;
+}
+
+/* Start: our teachers 
+======================================*/
+.all-ts {
+	transition: all var(--cnvs-transitions);
+  }
+  @media (prefers-reduced-motion: reduce) {
+	.all-ts {
+	  transition: none;
+	}
+  }
+
+ /* End: our teachers 
+======================================*/ 
+
+/* Start: testimonials 
+======================================*/
+.stack-cards {
+  position: relative;
+  display: block;
+}
+
+.stack-cards-item {
+	background: #fffefe;
+	border-radius: 0.25rem;
+	box-shadow: -5px 0 16px 8px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+	.content-wrap {
+		overflow:visible;
+	}
+	.stack-cards {
+		position: relative;
+		display: block;
+	}
+
+	.sticky-title {
+		position: sticky;
+		top: 8rem;
+	}
+
+	.stack-cards > .stack-cards-item + .stack-cards-item {
+		margin-top: 40vh;
+	}
+
+	.stack-cards-item {
+		--cnvs-stack-card-offset: 1.5em;
+		max-width: 53rem;
+		position: sticky;
+		top: 20rem;
+		margin-bottom: 0px;
+	}
+
+	.stack-cards-item:nth-of-type(0) {
+		transform: translateY(calc((0 - 1) * var(--cnvs-stack-card-offset))) scale(0.85);
+	}
+	.stack-cards-item:nth-of-type(1) {
+		transform: translateY(calc((1 - 1) * var(--cnvs-stack-card-offset))) scale(0.88);
+	}
+	.stack-cards-item:nth-of-type(2) {
+		transform: translateY(calc((2 - 1) * var(--cnvs-stack-card-offset))) scale(0.91);
+	}
+	.stack-cards-item:nth-of-type(3) {
+		transform: translateY(calc((3 - 1) * var(--cnvs-stack-card-offset))) scale(0.94);
+	}
+	.stack-cards-item:nth-of-type(4) {
+		transform: translateY(calc((4 - 1) * var(--cnvs-stack-card-offset))) scale(0.97);
+	}
+	.stack-cards-item:nth-of-type(5) {
+		transform: translateY(calc((5 - 1) * var(--cnvs-stack-card-offset))) scale(1);
+	}
+}
+
+/* End: testimonials
+======================================*/
+
+/* Start: page title section
+======================================*/
+[id^="particles-"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media (min-width: 992px){
+
+	.card-seo-about {
+		transform: translateY(-20%);
+	}
+}
+/* End: page title section
+======================================*/
+
+.swiper {
+	max-width: 400px;
+	height: auto;
+}
+
+
+/* End: Statistics section
+======================================*/
+.owl-carousel .owl-dots .owl-dot {
+	width: 20px;
+	height: 5px;
+	border-radius: 4px;
+	transition: all .3s ease-out;
+	opacity: .3;
+}
+
+.owl-carousel .owl-dots .owl-dot.active { width: 45px; }
+
+
+#locations-carousel .owl-stage-outer { padding-bottom: 40px  }
+
+#locations-carousel .owl-item.active .card {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#locations-carousel.owl-carousel .owl-nav [class*=owl-] {
+	opacity: 1;
+	background-color: #FFF;
+	color: var(--cnvs-themecolor, #267DF4);
+}
+
+#locations-carousel.owl-carousel .owl-dots {
+	position: relative;
+	background: #FFF;
+	width: 150px;
+	padding: 10px;
+	margin: 0 auto;
+	bottom: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#locations-carousel.owl-carousel .owl-dots .owl-dot { margin: 0 4px; }
+
+#locations-carousel .card {
+	position: relative;
+	right: auto;
+	margin: 0 auto;
+	bottom: 0;
+	margin-top: -30px;
+	padding: 20px;
+}
+
+@media (min-width: 992px) {
+
+	#locations-carousel .card {
+		opacity: 0;
+		position: absolute;
+		right: 40px;
+		bottom: -30px;
+		padding: 20px 30px;
+		width: 100%;
+		max-width: 320px;
+		border: 0;
+		border-radius: 4px;
+		transform: translateY(20px);
+		transition: all .4s .1s ease-out;
+	}
+
+	#locations-carousel.owl-carousel .owl-dots {
+		position: absolute;
+		top: auto;
+		left: 50%;
+		bottom: 45px;
+		margin-left: -75px;
+	}
+
+}
+/* End: Statistics section
+======================================*/
